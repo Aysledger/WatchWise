@@ -31,7 +31,7 @@ WatchWise is a simple and straightforward movie app for discovering trending mov
 - Each item in the lists has at least title or image and clicking on it navigates user to *Description* view where extended information about the same item is listed(overview, rating, big poster, actors starring in it and button to add it to Watchlist)
 - Network calls are stored in URLSessions folder
 - App is using files for data storage, specifically JSON files. It saves the user's watchlist locally in a JSON file named "watchlist.json" located in the app's documents directory. The WatchListModel class manages the encoding and decoding of data to and from this JSON file.
-- Additionally, app uses a plist file named "TMDB-info.plist" to store the API key. The *apiKey* property fetches the API key stored in this plist file. Plist file is added to .gitignore. File itself will be added to google doc for reference
+- Additionally, app uses a plist file named "TMDB-info.plist" to store the API key. The *apiKey* property fetches the API key stored in this plist file
 - The app handles all typical errors and communicates to the user whenever data is missing or empty
 - async/await, and MainActor used appropriately in **MovieDetailsViewModel** to keep slow-running tasks off the main thread and to update the UI on the main thread
 - **MovieDetailsViewModel** includes ObservableObject and Published properties and app has several view that is subscribed to Published value.
